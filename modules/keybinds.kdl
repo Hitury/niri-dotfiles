@@ -17,7 +17,7 @@ binds {
 
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn-sh "kitty"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "noctalia msg session lock"; }
-    Mod+E { spawn-sh "dolphin"; }
+    Mod+E { spawn "kitty" "yazi"; }
     Mod+Shift+S { spawn-sh "noctalia msg screenshot-region"; }
 
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
