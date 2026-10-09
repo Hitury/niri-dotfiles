@@ -1,0 +1,4 @@
+// --- Autostart --- \\
+
+spawn-at-startup "noctalia"
+spawn-at-startup "otd-daemon"

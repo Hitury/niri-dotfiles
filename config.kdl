@@ -1,0 +1,11 @@
+// --- Niri Modules --- \\
+
+include "modules/input.kdl"
+include "modules/output.kdl"
+include "modules/layout.kdl"
+include "modules/window-rules.kdl"
+include "modules/keybinds.kdl"
+include "modules/misc.kdl"
+include "modules/autostart.kdl"
+include "modules/env.kdl"
+include "noctalia.kdl"
