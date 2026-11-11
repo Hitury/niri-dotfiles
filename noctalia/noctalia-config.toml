@@ -1,0 +1,456 @@
+[audio]
+enable_overdrive = true
+enable_sounds = true
+
+[backdrop]
+blur_intensity = 0.33999999240040779
+enabled = true
+tint_intensity = 0.46999998949468136
+
+[bar]
+order = [ "Waybar" ]
+
+    [bar.Waybar]
+    background_opacity = 0.4999999888241291
+    center = [ "group:g4" ]
+    end = [ "group:g3" ]
+    hover_highlight = false
+    margin_ends = 1
+    padding = 20
+    radius = 0
+    shadow = false
+    start = [ "group:g1" ]
+    thickness = 44
+    widget_spacing = 12
+
+        [[bar.Waybar.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface"
+        id = "g1"
+        members = [ "workspaces", "wallpaper", "nextboot-selector", "notes", "tracker", "widget_3" ]
+        opacity = 0.0
+        padding = 11.0
+        widget_spacing = 16
+
+        [[bar.Waybar.capsule_group]]
+        accordion = false
+        accordion_direction = "start"
+        border = ""
+        border_width = 1.0
+        enabled = true
+        fill = "surface"
+        id = "g3"
+        members = [ "tray", "widget_4", "notifications", "clipboard", "volume" ]
+        opacity = 0.0
+        padding = 9.0
+        widget_spacing = 20
+
+        [[bar.Waybar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g4"
+        members = [ "clock", "spacer_1" ]
+        opacity = 0.0
+        padding = 32.0
+
+[brightness]
+enable_ddcutil = false
+
+[clipboard]
+keep_from_closed_apps = false
+sync_delay_ms = 100
+
+[control_center]
+hidden_tabs = [ "media", "power", "screen-time" ]
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "alexander/screen-toolkit:toggle"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.67999998480081558
+cross_axis_padding = 4
+enabled = true
+icon_size = 32
+item_spacing = 14
+launcher_icon = "cat"
+magnification = false
+margin_edge = 6
+pinned = [ "firefox" ]
+radius = 31
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
+
+[location]
+address = "Heerenveen"
+
+[lockscreen]
+blur_intensity = 0.42999999038875103
+fingerprint = false
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-4", "lockscreen-login-box@DP-3", "lockscreen-login-box@WL-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 960.0
+    cy = 961.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-4"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 960.0
+    cy = 961.0
+    output = "HDMI-A-4"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-4".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 640.0
+    cy = 538.0
+    output = "WL-1"
+    placement_height = 720.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[osd]
+background_opacity = 0.68999998457729816
+position = "top_right"
+scale = 0.85000000521540642
+
+[plugin_settings."alexander/game-launcher"]
+lutris_enabled = false
+
+[plugin_settings."avivbintangaringga/nextboot-selector"]
+reboot_on_select = true
+
+[plugin_settings."cleboost/anilist"]
+client_id = "49655"
+client_secret = "N0guXTzxL8uTQdmVLrpI6RgoeN1ITBYfgyB6S9v4"
+
+[plugin_settings."dunarand/bookmarks"]
+bk_sort_by = "usage_count"
+
+[plugin_settings."gustav0ar/drive-health"]
+system_collector_enabled = true
+
+[plugin_settings."ishan0121/wallpaper-deck"]
+panel_padding_offset = 12
+picker_position = "auto"
+
+[plugin_settings."kenn/keybind-cheatsheet"]
+compositor = "hyprland"
+hyprland_config = "~/.config/hypr/hyprland.lua"
+hyprland_lua_config = "~/.config/hypr/modules/binds.lua"
+
+[plugin_settings."noctalia/screen_recorder"]
+color_range = "full"
+copy_to_clipboard = true
+quality = "high"
+replay_duration = 60
+replay_enabled = true
+
+[plugins]
+auto_update = "none"
+enabled = [
+    "oldirtty/color_picker",
+    "noctalia/notes",
+    "noctalia/wallhaven",
+    "alexander/game-launcher",
+    "dunarand/bookmarks",
+    "avivbintangaringga/nextboot-selector",
+    "alexander/screen-toolkit",
+    "radimous/prismlauncher-instances",
+    "thaer99ob/default-apps",
+    "ashur-d/nvim-projects",
+    "styrish/modernclock",
+    "aabidk20/yt-music"
+]
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+[shell]
+app_icon_color = "primary"
+avatar_path = ""
+font_family = "Iosevka NF"
+lang = "en"
+launch_apps_as_systemd_services = true
+niri_overview_type_to_launch_enabled = true
+polkit_agent = true
+show_location = false
+
+    [shell.greeter_sync]
+    auto_sync = true
+
+    [shell.launcher]
+    compact = true
+    pinned = [ "firefox", "steam", "com.obsproject.Studio", "org.kde.plasma-systemmonitor", "kdesystemsettings", "btop" ]
+    show_app_actions = true
+    show_settings_button = false
+    width = 620
+
+    [shell.panel]
+    clipboard_placement = "attached"
+    control_center_placement = "floating"
+    open_near_click_clipboard = true
+    transparency_mode = "glass"
+
+    [shell.screen_corners]
+    size = 1
+    
+[theme]
+builtin = "Ayu"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "helix", "hyprland", "kitty", "niri", "qt", "umbriel" ]
+    community_ids = [
+        "spicetify",
+        "pywalfox-beta4",
+        "discord",
+        "neovim",
+        "vscode",
+        "heroiclauncher",
+        "prismlauncher",
+        "steam",
+        "obs",
+        "seanime",
+        "lazygit",
+        "yazi"
+    ]
+
+[wallpaper]
+edge_smoothness = 0.069999998435378075
+fill_mode = "stretch"
+transition = [ "disc", "wipe" ]
+transition_duration = 1100
+transition_on_startup = true
+
+[weather]
+refresh_minutes = 10
+
+[widget.audio_visualizer]
+capsule = true
+capsule_opacity = 0.25
+capsule_padding = 8
+mirrored = false
+
+[widget.bluetooth]
+capsule = true
+capsule_fill = "surface"
+capsule_opacity = 0.25
+capsule_padding = 9
+capsule_radius = 24
+
+[widget.clipboard]
+capsule_fill = "surface"
+capsule_opacity = 0.25
+capsule_padding = 9
+capsule_radius = 0
+
+[widget.clock]
+capsule = true
+capsule_fill = "surface_container"
+capsule_opacity = 0.60999999999999999
+capsule_padding = 35
+capsule_radius = 24
+tooltip_format = "{:%D} {:%H:%M:%S}"
+
+[widget.launcher]
+capsule = true
+capsule_radius = 24
+
+[widget.media]
+max_length = 105
+title_scroll = "on_hover"
+
+[widget.network]
+capsule = true
+capsule_fill = "surface"
+capsule_opacity = 0.25
+capsule_padding = 8
+capsule_radius = 12
+enabled = false
+font_family = "Fira Sans Compressed Four"
+show_label = false
+
+[widget.nextboot-selector]
+color = "secondary"
+type = "avivbintangaringga/nextboot-selector:nextboot-selector"
+
+[widget.notes]
+color = "secondary"
+type = "noctalia/notes:notes"
+
+[widget.notifications]
+capsule_fill = "surface"
+capsule_opacity = 0.25
+capsule_padding = 9
+capsule_radius = 12
+
+[widget.session]
+capsule_fill = "primary"
+capsule_opacity = 0.13
+capsule_padding = 9
+capsule_radius = 24
+
+[widget.spacer_1]
+enabled = false
+icon_color = "primary"
+length = 13
+type = "spacer"
+
+[widget.tracker]
+color = "secondary"
+icon_color = "secondary"
+type = "cleboost/anilist:tracker"
+
+[widget.tray]
+capsule = true
+capsule_fill = "surface"
+capsule_opacity = 0.25
+capsule_padding = 9
+capsule_radius = 24
+detached_panel = true
+drawer = true
+
+[widget.volume]
+capsule_fill = "surface"
+capsule_opacity = 0.25
+capsule_padding = 9
+capsule_radius = 0
+show_label = false
+
+[widget.wallpaper]
+capsule_opacity = 0.0
+capsule_padding = 7
+capsule_radius = 60
+icon_color = "secondary"
+
+[widget.widget]
+type = "oldirtty/color_picker:widget"
+
+[widget.widget_3]
+color = "secondary"
+icon_color = "secondary"
+type = "oldirtty/color_picker:widget"
+
+[widget.widget_4]
+type = "aabidk20/yt-music:widget"
+
+[widget.workspaces]
+active_pill_size = 2.25
+occupied_color = "on_secondary"
+show_labels = false
